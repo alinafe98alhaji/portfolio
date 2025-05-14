@@ -24,3 +24,52 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* In your globals.css */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .typewriter-container {
+    display: inline-block;
+    min-width: 100%;
+    text-align: center;
+    overflow: hidden;
+    transition: width 0.3s ease;
+  }
+  /* Smooth typewriter container */
+}
+/* Add transition to the container */
+/* Typewriter container */
+
+/* Smooth text balancing */
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Particle canvas positioning */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+/* Smooth transitions for all animated elements */
+.motion-element {
+  transition: all 0.3s ease;
+}
+
+/* Better text rendering */
+.optimize-legibility {
+  text-rendering: optimizeLegibility;
+}
+/* Smooth transitions for all elements */
+* {
+  transition: all 0.05s ease;
+}
+
+/* Enhanced button hover effect */
+.hover-glow {
+  transition: box-shadow 0.3s ease;
+}
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+}
