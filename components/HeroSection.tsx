@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import ParticlesBg from "./ParticlesBg";
-import { ArrowDown, Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 
 const containerVariants = {
   hidden: { opacity: 0, y: -20 },

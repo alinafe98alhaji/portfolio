@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ParticlesBg from "../components/ParticlesBg";
 import { LazyMotion, domAnimation } from "framer-motion";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,9 +35,9 @@ export default function RootLayout({
           <nav className="container mx-auto flex justify-between items-center">
             <h1 className="text-2xl font-bold">My Portfolio</h1>
             <ul className="flex space-x-6">
-              <li><a href="/" className="hover:underline">Home</a></li>
-              <li><a href="/projects" className="hover:underline">Projects</a></li>
-              <li><a href="/contact" className="hover:underline">Contact</a></li>
+              <li><Link href="/" className="hover:underline">Home</Link></li>
+              <li><Link href="/projects" className="hover:underline">Projects</Link></li>
+              <li><Link href="/contact" className="hover:underline">Contact</Link></li>
             </ul>
           </nav>
         </header>
