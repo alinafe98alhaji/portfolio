@@ -31,25 +31,20 @@ export default function RootLayout({
 <LazyMotion features={domAnimation}>
 
         {/* Navbar */}
-        <header className="p-4 bg-gray-800">
+        <header className="p-4">
           <nav className="container mx-auto flex justify-between items-center">
-            <h1 className="text-2xl font-bold">My Portfolio</h1>
-            <ul className="flex space-x-6">
-              <li><Link href="/" className="hover:underline">Home</Link></li>
-              <li><Link href="/projects" className="hover:underline">Projects</Link></li>
-              <li><Link href="/contact" className="hover:underline">Contact</Link></li>
-            </ul>
+            <h1 className="text-2xl font-bold"></h1>
           </nav>
         </header>
 
         {/* Main Content */}
         <main className="relative container mx-auto p-6">
-  <ParticlesBg />
+  
   {children}
 </main>
 
         {/* Footer */}
-        <footer className="p-4 bg-gray-800 text-center mt-10">
+        <footer className="p-4 text-center mt-10">
           <p>&copy; {new Date().getFullYear()} Spruce. All Rights Reserved.</p>
         </footer>
         </LazyMotion>
