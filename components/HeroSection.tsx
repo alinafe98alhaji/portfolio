@@ -37,7 +37,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, x: 0 }}
         >
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">
-            Hi, I'm Alinafe
+            Hi, I am Alinafe
           </h1>
           <p className="text-xl text-blue-500 mb-2">Full-Stack Developer</p>
           <p className="text-gray-600 dark:text-gray-300 mb-8 max-w-md">
