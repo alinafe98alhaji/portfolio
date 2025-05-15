@@ -59,9 +59,10 @@ export default function HeroSection() {
           className="relative h-64 md:h-80 lg:h-96"
         >
           <Image
+            width={400}
+            height={600}
             src="/IMG_E3831.JPG" // or project-ui.png
             alt="Alinafe M."
-            fill
             className="object-cover rounded-lg shadow-xl"
             priority
           />
