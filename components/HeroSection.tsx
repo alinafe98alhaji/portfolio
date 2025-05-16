@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Github, Linkedin, Code, Cpu, Zap, Database, Cogs, Server, Terminal, Cloud } from "lucide-react";
+import { Github, Linkedin, Code, Cpu, Zap, Database, Cog, Server, Terminal, Cloud } from "lucide-react";
 
 const techStack = [
   { name: "Next.js", icon: <Cpu className="h-4 w-4 text-blue-500" />, color: "bg-blue-100 dark:bg-blue-900/30 text-blue-500" },
@@ -11,7 +11,7 @@ const techStack = [
   { name: "Node.js", icon: <Server className="h-4 w-4 text-green-500" />, color: "bg-green-100 dark:bg-green-900/30 text-green-500" },
   { name: "PHP", icon: <svg className="h-4 w-4 text-purple-500" viewBox="0 0 24 24"><path fill="currentColor" d="M12 18c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6zm0-10c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4z"/></svg>, color: "bg-purple-100 dark:bg-purple-900/30 text-purple-500" },
   { name: "MongoDB", icon: <Database className="h-4 w-4 text-green-400" />, color: "bg-green-50 dark:bg-green-900/20 text-green-400" },
-  { name: "SQL", icon: <Cogs className="h-4 w-4 text-blue-300" />, color: "bg-blue-50 dark:bg-blue-900/20 text-blue-300" },
+  { name: "SQL", icon: <Cog className="h-4 w-4 text-blue-300" />, color: "bg-blue-50 dark:bg-blue-900/20 text-blue-300" }, // Changed from Cogs to Cog
   { name: "Express", icon: <Terminal className="h-4 w-4 text-gray-500" />, color: "bg-gray-100 dark:bg-gray-800 text-gray-500" },
   { name: "AWS", icon: <Cloud className="h-4 w-4 text-orange-500" />, color: "bg-orange-100 dark:bg-orange-900/30 text-orange-500" }
 ];
@@ -146,7 +146,7 @@ export default function HeroSection() {
           </div>
         </motion.div>
 
-        {/* Image Gallery - Mobile Optimized */}
+        {/* Image Gallery */}
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -194,10 +194,6 @@ export default function HeroSection() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
           </motion.div>
-
-          {/* Decorative Elements */}
-          <div className="absolute -z-10 w-20 h-20 xs:w-24 xs:h-24 rounded-full bg-blue-400/10 blur-xl top-1/4 -left-4 xs:-left-6" />
-          <div className="absolute -z-10 w-24 h-24 xs:w-28 xs:h-28 rounded-full bg-blue-600/10 blur-xl bottom-1/4 -right-4 xs:-right-6" />
         </motion.div>
       </div>
     </section>
