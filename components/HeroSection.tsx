@@ -11,8 +11,6 @@ import {
   Cog,
   Server,
   Terminal,
-  Layers,
-  Circle,
   Cloud
 } from "lucide-react";
 
@@ -84,45 +82,9 @@ const techStack = [
     color: "bg-gray-100 dark:bg-gray-800 text-gray-500"
   },
   {
-    name: "React",
-    icon: (
-      <svg className="h-4 w-4 text-cyan-500" viewBox="0 0 24 24">
-        <path
-          fill="currentColor"
-          d="M12 18c3.31 0 6-2.69 6-6s-2.69-6-6-6-6 2.69-6 6 2.69 6 6 6zm0-10c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4z"
-        />
-      </svg>
-    ),
-    color: "bg-cyan-100 dark:bg-cyan-900/30 text-cyan-500"
-  },
-  {
-    name: "TypeScript",
-    icon: (
-      <svg className="h-4 w-4 text-blue-600" viewBox="0 0 24 24">
-        <path
-          fill="currentColor"
-          d="M3 3h18v18H3V3zm16 16V5H5v14h14zM12 17v-1.5h4.88c-.15.48-.36.93-.63 1.32-1.03 1.48-2.83 2.18-5.25 2.18-2.67 0-4.7-1.25-5.07-3.5h1.5c.3 1.26 1.31 2 2.57 2 1.39 0 2.38-.66 2.38-1.88 0-.7-.36-1.18-1.12-1.53l-3.48-1.5C7.1 10.18 6 8.95 6 7.13 6 5.12 7.56 3.5 10.13 3.5c2.31 0 3.85 1.37 4.12 3.5H12.8c-.2-1.06-1.11-1.5-2.07-1.5-1.33 0-2.13.71-2.13 1.75 0 .73.4 1.21 1.15 1.54l3.48 1.5c1.58.68 2.52 1.76 2.52 3.46 0 1.96-1.54 3.5-3.63 3.5z"
-        />
-      </svg>
-    ),
-    color: "bg-blue-100 dark:bg-blue-900/30 text-blue-600"
-  },
-  {
     name: "AWS",
     icon: <Cloud className="h-4 w-4 text-orange-500" />,
     color: "bg-orange-100 dark:bg-orange-900/30 text-orange-500"
-  },
-  {
-    name: "Docker",
-    icon: (
-      <svg className="h-4 w-4 text-blue-400" viewBox="0 0 24 24">
-        <path
-          fill="currentColor"
-          d="M4 4h16v16H4V4zm2 2v12h12V6H6zm5 2h2v2h-2V8zm0 3h2v2h-2v-2zm-3-3h2v2H8V8zm0 3h2v2H8v-2zm-3 0h2v2H5v-2zm0-3h2v2H5V8zm9 6h-7v2h7v-2z"
-        />
-      </svg>
-    ),
-    color: "bg-blue-50 dark:bg-blue-900/20 text-blue-400"
   }
 ];
 
@@ -139,7 +101,8 @@ export default function HeroSection() {
             <Image
               src="/UHLHE0654.JPG"
               alt="Profile"
-              fill
+              width={40}
+              height={40}
               className="rounded-full object-cover shadow-md"
             />
           </motion.div>
@@ -212,7 +175,7 @@ export default function HeroSection() {
 
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">
             <span className="text-gray-500 dark:text-gray-400">
-              Hey! I'm
+              Hey! I&apos;m
             </span>{" "}
             <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
               Alinafe
@@ -220,8 +183,9 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-6 max-w-lg leading-relaxed">
-            I <span className="font-medium text-blue-500">
-              design & build
+            I{" "}
+            <span className="font-medium text-blue-500">
+              design &amp; build
             </span>{" "}
             robust systems that scale from
             <span className="font-medium text-blue-500">
@@ -287,7 +251,7 @@ export default function HeroSection() {
               className="px-6 py-3 border-2 border-blue-500 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors shadow-sm"
             >
               <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent font-medium">
-                Let's Build Together
+                Let&apos;s Build Together
               </span>
             </motion.a>
           </div>
@@ -311,7 +275,8 @@ export default function HeroSection() {
             <Image
               src="/IMG_E3831.JPG"
               alt="Development Workflow"
-              fill
+              width={500}
+              height={600}
               className="object-cover"
               style={{ objectPosition: "center" }}
               priority
@@ -329,7 +294,8 @@ export default function HeroSection() {
             <Image
               src="/IMG_1063.PNG"
               alt="Project Showcase"
-              fill
+              width={500}
+              height={600}
               className="object-cover"
               style={{ objectPosition: "center" }}
               priority
