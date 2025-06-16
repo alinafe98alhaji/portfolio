@@ -169,7 +169,7 @@ export default function HeroSection() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">
-            <span className="text-gray-500 dark:text-gray-400">Hey! I'm </span>
+            <span className="text-gray-500 dark:text-gray-400">Hey! I am </span>
             <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
               Alinafe
             </span>
@@ -223,7 +223,7 @@ export default function HeroSection() {
               className="px-6 py-3 border-2 border-blue-500 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-base"
             >
               <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent font-medium">
-                Let's Build Together
+                Let us Build Together
               </span>
             </motion.a>
           </div>
