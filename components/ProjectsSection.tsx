@@ -4,16 +4,18 @@ import { Code, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "Full-stack e-commerce solution with payment integration",
-    tags: ["Next.js", "Node.js", "MongoDB"],
+    title: "Data Systems Maturity Assessment Tool",
+    description:
+      "A platform for assessing water supply and sanitation data systems maturity at national and organization levels across the data value pipeline (from data collection, data ownership, data flow, data quality, and data use) to support decisions in key sector areas of urban and rural WSS coverage, finance, regulation, and utility operations.",
+    tags: ["Next.js", "Node.js", "MongoDB", "Typescript"],
     image: "/assets/projects/ecommerce.jpg"
   },
   {
-    title: "Task Management App",
-    description: "Collaborative task management with real-time updates",
-    tags: ["React", "Firebase", "Tailwind CSS"],
-    image: "/assets/projects/taskapp.jpg"
+    title: "Kuala Tech: Vehicle Data Overview",
+    description:
+      "A web interface that gets information from 3 different endpoints and shows a card for eachendpoint with the count of the number of objects received in the data array.",
+    tags: ["React", "Next.js", "Tailwind CSS", "Typescript"],
+    image: "/assets/projects/12.jpg"
   }
 ];
 
