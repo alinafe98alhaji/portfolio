@@ -43,7 +43,7 @@ export default function RootLayout({
 
         {/* Footer */}
         <footer className="p-4 text-center mt-10">
-          <p>&copy; {new Date().getFullYear()} Spruce. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Alinafe. All Rights Reserved.</p>
         </footer>
         </LazyMotion>
       </body>
