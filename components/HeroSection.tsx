@@ -41,7 +41,7 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex flex-col justify-start items-center overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-950 dark:to-gray-900 pt-12 sm:pt-16">
       {/* Main Content */}
-      <div className="max-w-6xl w-full px-6 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center relative z-10">
+      <div className="max-w-6xl w-full px-6 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
         {/* Text Section */}
         <div>
           <h1 className="text-4xl sm:text-5xl font-bold leading-snug">
@@ -130,9 +130,9 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Static Bottom Tech Logos */}
+      {/* Tech Logos Section */}
       {mounted &&
-        <div className="absolute bottom-10 w-full flex flex-col gap-4 items-center z-0 px-4">
+        <div className="mt-12 w-full flex flex-col gap-4 items-center px-4">
           {/* Top Row */}
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
             {topIcons.map((icon, idx) => {
