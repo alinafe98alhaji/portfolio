@@ -39,9 +39,9 @@ export default function HeroSection() {
   if (!mounted) return null;
 
   return (
-    <section className="relative min-h-screen rounded-md border-1 border-teal-500 flex flex-col justify-start items-center overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-950 dark:to-gray-900 pt-16">
+    <section className="relative min-h-screen flex flex-col justify-start items-center overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-950 dark:to-gray-900 pt-12 sm:pt-16">
       {/* Main Content */}
-      <div className="max-w-6xl w-full px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
+      <div className="max-w-6xl w-full px-6 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center relative z-10">
         {/* Text Section */}
         <div>
           <h1 className="text-4xl sm:text-5xl font-bold leading-snug">
@@ -83,7 +83,7 @@ export default function HeroSection() {
             </span>.
           </p>
 
-          <div className="flex gap-4 mt-8">
+          <div className="flex gap-4 mt-8 flex-wrap">
             <a
               href="#projects"
               className="px-6 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-blue-400 text-white font-medium shadow-lg"
@@ -118,7 +118,7 @@ export default function HeroSection() {
 
         {/* Profile Image */}
         <div className="relative flex justify-center items-center w-full">
-          <div className="relative rounded-full overflow-hidden shadow-xl border-1 border-teal-500 dark:border-gray-800 w-64 h-90 z-10">
+          <div className="relative rounded-full overflow-hidden shadow-xl w-64 h-80 sm:w-72 sm:h-88 z-10 border-2 border-teal-500 dark:border-gray-800">
             <Image
               src="/IMG_E3831.JPG"
               alt="Profile"
@@ -132,16 +132,16 @@ export default function HeroSection() {
 
       {/* Static Bottom Tech Logos */}
       {mounted &&
-        <div className="absolute bottom-10 w-full flex flex-col gap-4 items-center z-0 px-6">
+        <div className="absolute bottom-10 w-full flex flex-col gap-4 items-center z-0 px-4">
           {/* Top Row */}
-          <div className="flex gap-6 justify-center">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
             {topIcons.map((icon, idx) => {
-              const offsetX = Math.random() * 12 - 6; // ±6px horizontal
-              const offsetY = Math.random() * 6 - 3; // ±3px vertical
+              const offsetX = Math.random() * 12 - 6;
+              const offsetY = Math.random() * 6 - 3;
               return (
                 <div
                   key={`top-${idx}`}
-                  className="w-24 h-24 flex items-center justify-center rounded-full"
+                  className="w-20 sm:w-24 h-20 sm:h-24 flex items-center justify-center rounded-full"
                   style={{
                     transform: `translate(${offsetX}px, ${offsetY}px)`,
                     filter: "drop-shadow(0 0 25px rgba(59,130,246,0.7))"
@@ -154,14 +154,14 @@ export default function HeroSection() {
           </div>
 
           {/* Bottom Row */}
-          <div className="flex gap-6 justify-center">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mt-2">
             {bottomIcons.map((icon, idx) => {
-              const offsetX = Math.random() * 12 - 6; // ±6px horizontal
-              const offsetY = Math.random() * 6 - 3; // ±3px vertical
+              const offsetX = Math.random() * 12 - 6;
+              const offsetY = Math.random() * 6 - 3;
               return (
                 <div
                   key={`bottom-${idx}`}
-                  className="w-24 h-24 flex items-center justify-center rounded-full"
+                  className="w-20 sm:w-24 h-20 sm:h-24 flex items-center justify-center rounded-full"
                   style={{
                     transform: `translate(${offsetX}px, ${offsetY}px)`,
                     filter: "drop-shadow(0 0 25px rgba(168,85,247,0.7))"
