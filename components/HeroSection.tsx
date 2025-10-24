@@ -7,7 +7,7 @@ import { useEffect, useState, useRef } from "react";
 
 export default function HeroSection() {
   const [mounted, setMounted] = useState(false);
-  const carouselRef = useRef<HTMLDivElement>(null);
+  //const carouselRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => setMounted(true), []);
 
@@ -136,7 +136,7 @@ export default function HeroSection() {
 
           {/* Main Heading */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-            Hi, I'm{" "}
+            Hi, I&apos;m{" "}
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 bg-clip-text text-transparent animate-gradient">
               Alinafe
             </span>
@@ -188,7 +188,7 @@ export default function HeroSection() {
                   Solving complex business challenges through technology
                 </p>
                 <p className="text-xs text-blue-700 dark:text-blue-300 mt-1">
-                  Let's discuss how I can help scale your platform, reduce
+                  Let&apos;s discuss how I can help scale your platform, reduce
                   costs, or build your MVP
                 </p>
               </div>
@@ -344,9 +344,9 @@ export default function HeroSection() {
                       width={56}
                       height={56}
                       className="object-contain transition-all duration-500 group-hover:scale-110 group-hover:rotate-3"
-                      onError={e => {
-                        console.warn(`Failed to load: ${icon.src}`);
-                      }}
+                      // onError={e => {
+                      //   console.warn(`Failed to load: ${icon.src}`);
+                      // }}
                     />
                   </div>
 

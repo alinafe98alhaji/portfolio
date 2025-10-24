@@ -148,7 +148,7 @@ export default function SkillsSection() {
           viewport={{ once: true, margin: "-50px" }}
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
-          {skills.map((skillCategory, i) =>
+          {skills.map(skillCategory =>
             <motion.div
               key={skillCategory.category}
               variants={itemVariants}
@@ -166,7 +166,7 @@ export default function SkillsSection() {
 
               {/* Skills List */}
               <div className="space-y-4">
-                {skillCategory.items.map((skill, j) =>
+                {skillCategory.items.map(skill =>
                   <div key={skill.name} className="group/skill">
                     <div className="flex justify-between items-center mb-2">
                       <span className="font-medium text-gray-700 dark:text-gray-300 text-sm">

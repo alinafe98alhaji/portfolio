@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { Mail, Send, MapPin, Phone, Linkedin, Github, Calendar } from "lucide-react";
+import { Mail, Send, MapPin, Linkedin, Github } from "lucide-react";
 import { useState } from "react";
 
 export default function ContactSection() {
@@ -47,10 +47,10 @@ export default function ContactSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Let's <span className="text-blue-600 dark:text-blue-400">Connect</span>
+            Let&apos;s <span className="text-blue-600 dark:text-blue-400">Connect</span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Ready to bring your next project to life? Let's discuss how we can work together 
+            Ready to bring your next project to life? Let&apos;s discuss how we can work together 
             to create innovative solutions.
           </p>
         </motion.div>
@@ -68,7 +68,7 @@ export default function ContactSection() {
                 Get In Touch
               </h3>
               <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
-                I'm always interested in new opportunities, collaborative projects, 
+                I&apos;m always interested in new opportunities, collaborative projects, 
                 and discussing innovative ideas. Whether you have a project in mind 
                 or just want to connect, feel free to reach out.
               </p>
