@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
 import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 
 export default function HeroSection() {
   const [mounted, setMounted] = useState(false);
